@@ -1,7 +1,8 @@
 import Image from "next/image";
-import { HeaderButton, HeaderContainer, HeaderNav } from "./styles";
+import { HeaderContainer, HeaderNav } from "./styles";
 import Logo from "../../public/logo.svg";
 import { NavLink } from "../Link";
+import { MainButton } from "../button/styles";
 
 export function Header() {
   return (
@@ -14,7 +15,7 @@ export function Header() {
         <NavLink href="/sobre">Sobre</NavLink>
         <NavLink href="/consulta">Consulta</NavLink>
         <NavLink href="/contato">Contato</NavLink>
-        <HeaderButton>Agendar</HeaderButton>
+        <MainButton>Agendar</MainButton>
       </HeaderNav>
     </HeaderContainer>
   );
