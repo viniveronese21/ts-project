@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 interface NavLinkProps {
-  children: string;
+  children: any;
   href: string;
 }
 

@@ -6,7 +6,9 @@ import { NavLink } from "../Link";
 export function Header() {
   return (
     <HeaderContainer>
-      <Image src={Logo} alt={"Larissa Longobardi"} />
+      <NavLink href="/">
+        <Image src={Logo} alt={"Larissa Longobardi"} />
+      </NavLink>
       <HeaderNav>
         <NavLink href="/">Home</NavLink>
         <NavLink href="/sobre">Sobre</NavLink>

@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-import Link from "next/link";
-
 export const HeaderContainer = styled.header`
   height: 113px;
   width: 100%;
@@ -10,7 +8,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-evenly;
 
-  background: ${(props) => props.theme["back-white"]};
+  background: ${(props) => props.theme["ice-white"]};
   border: 1px solid red;
 `;
 
@@ -25,7 +23,7 @@ export const HeaderNav = styled.nav`
     color: ${(props) => props.theme["gray-900"]};
 
     &:hover {
-      color: ${(props) => props.theme["red-500"]};
+      color: ${(props) => props.theme["red-300"]};
     }
 
     &:active {
@@ -37,14 +35,15 @@ export const HeaderNav = styled.nav`
 export const HeaderButton = styled.button`
   width: 164px;
   height: 43px;
-  border-radius: 22px;
-  border: 3px solid ${(props) => props.theme["gray-900"]};
+  border-radius: 11px;
+  border: 2px solid ${(props) => props.theme["gray-900"]};
 
-  background: ${(props) => props.theme["back-white"]};
+  background: ${(props) => props.theme["ice-white"]};
 
   &:hover {
     background: ${(props) => props.theme["red-300"]};
     color: ${(props) => props.theme.white};
+    border: 2px solid ${(props) => props.theme["red-300"]};
 
     transition: all 0.2s;
   }
