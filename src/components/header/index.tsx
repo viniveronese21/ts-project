@@ -1,22 +1,22 @@
 import Image from "next/image";
 import { HeaderContainer, HeaderNav } from "./styles";
 import Logo from "../../public/logo.svg";
-import { NavLink } from "../Link";
+import { Link } from "../Link";
 import { MainButton } from "../button/styles";
 
 export function Header() {
   return (
     <HeaderContainer>
-      <NavLink href="/">
+      <Link href="/">
         <Image src={Logo} alt={"Larissa Longobardi"} />
-      </NavLink>
+      </Link>
       <HeaderNav>
-        <NavLink href="/">Home</NavLink>
-        <NavLink href="/sobre">Sobre</NavLink>
-        <NavLink href="/consulta">Consulta</NavLink>
-        <NavLink href="/contato">Contato</NavLink>
-        <MainButton>Agendar</MainButton>
+        <Link href="/">Home</Link>
+        <Link href="/sobre">Sobre</Link>
+        <Link href="/consulta">Consulta</Link>
+        <Link href="/contato">Contato</Link>
       </HeaderNav>
+      <MainButton>Agendar</MainButton>
     </HeaderContainer>
   );
 }

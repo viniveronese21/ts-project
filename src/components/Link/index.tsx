@@ -1,14 +1,14 @@
-import Link from "next/link";
+import NextLink from "next/link";
 
 interface NavLinkProps {
   children: any;
   href: string;
 }
 
-export function NavLink({ children, href, ...props }: NavLinkProps) {
+export function Link({ children, href, ...props }: NavLinkProps) {
   return (
-    <Link href={href} legacyBehavior>
-      <a {...props}>{children}</a>
-    </Link>
+    <NextLink href={href} {...props} legacyBehavior>
+      {children}
+    </NextLink>
   );
 }
