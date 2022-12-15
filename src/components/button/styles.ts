@@ -8,12 +8,12 @@ export const MainButton = styled.button`
   border-radius: 0.6875rem;
   border: 0.125rem solid ${(props) => props.theme["gray-900"]};
 
-  background: ${(props) => props.theme["ice-white"]};
+  background: ${(props) => props.theme["neutral-50"]};
 
   &:hover {
-    background: ${(props) => props.theme["red-300"]};
+    background: ${(props) => props.theme["red-500"]};
     color: ${(props) => props.theme.white};
-    border: 0.125rem solid ${(props) => props.theme["red-300"]};
+    border: 0.125rem solid ${(props) => props.theme["red-500"]};
 
     transition: all 0.2s;
   }

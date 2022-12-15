@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-evenly;
 
-  background: ${(props) => props.theme["ice-white"]};
+  background: ${(props) => props.theme["neutral-50"]};
   border: 1px solid red;
 `;
 
@@ -20,11 +20,12 @@ export const HeaderNav = styled.nav`
   a {
     text-decoration: none;
     color: ${(props) => props.theme["gray-900"]};
+    font-weight: 400;
 
     &:hover {
       border-bottom: 3px solid ${(props) => props.theme["gray-900"]};
 
-      color: ${(props) => props.theme["red-300"]};
+      color: ${(props) => props.theme["red-500"]};
       transition: all 0.2s;
     }
 
