@@ -24,13 +24,7 @@ export const HeaderNav = styled.nav`
 
     &:hover {
       border-bottom: 3px solid ${(props) => props.theme["gray-900"]};
-
-      color: ${(props) => props.theme["red-500"]};
       transition: all 0.2s;
-    }
-
-    &:active {
-      border-bottom: 3px solid ${(props) => props.theme["gray-900"]};
     }
   }
 `;
